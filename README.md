@@ -4,10 +4,10 @@
     <img src="https://dyte-uploads.s3.ap-south-1.amazonaws.com/dyte-logo-dark.svg" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">docs-template by dyte</h3>
+  <h3 align="center">Dyte plugin SDK Template (Vanilla JS)</h3>
 
   <p align="center">
-    ADD_DESCRIPTION_HERE
+    A simple template describing how to build a Dyte plugin using vanilla js
     <br />
     <a href="https://docs.dyte.in"><strong>Explore the docs »</strong></a>
     <br />
@@ -26,16 +26,16 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contributors](#contributors-)
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
 
 
 

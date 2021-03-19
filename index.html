@@ -23,22 +23,22 @@
         });
 
         // Listen for when a new person joins the emeting
-        plugin.on(Events.peerJoined, (peer) => {
+        plugin.on(dytePluginSdk.Events.peerJoined, (peer) => {
             console.log('Peer joined: ', peer);
         });
 
-        plugin.on(Events.pluginEvent, (data) => {
+        plugin.on(dytePluginSdk.Events.pluginEvent, (data) => {
             // The "test" event we triggered above should be caught here!
             console.log(data);
         })
 
         // Listen for when a person leaves the meeting
-        plugin.on(Events.peerClosed, (peer) => {
+        plugin.on(dytePluginSdk.Events.peerClosed, (peer) => {
             console.log('Peer closed: ', peer);
         });
 
         // Listen for chat messages on the sidebar
-        plugin.on(Events.chatMessage, (message) => {
+        plugin.on(dytePluginSdk.Events.chatMessage, (message) => {
             console.log('Chat message received', message);
         });
     </script>
