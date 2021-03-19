@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.dyte.in/lib/dyte-plugin-sdk.umd.js"></script>
+    <script>
+        const plugin = new dytePluginSdk.DytePlugin();
+        plugin.on(dytePluginSdk.Events.initialized, async () => {
+            console.log('Plugin initialized');
+            // console.log('JoinedPeers:', await plugin.getJoinedPeers())
+
+            // Send a chat message on the sidebar
+            console.log('Sending chat message');
+            await plugin.sendChatMessage("Hello, this message is from a plugin!");
+
+            // Trigger an event that will be sent to all the people in the meeting
+            await plugin.triggerEvent("test");
+        });
+
+        // Listen for when a new person joins the emeting
+        plugin.on(Events.peerJoined, (peer) => {
+            console.log('Peer joined: ', peer);
+        });
+
+        plugin.on(Events.pluginEvent, (data) => {
+            // The "test" event we triggered above should be caught here!
+            console.log(data);
+        })
+
+        // Listen for when a person leaves the meeting
+        plugin.on(Events.peerClosed, (peer) => {
+            console.log('Peer closed: ', peer);
+        });
+
+        // Listen for chat messages on the sidebar
+        plugin.on(Events.chatMessage, (message) => {
+            console.log('Chat message received', message);
+        });
+    </script>
+</body>
+</html>
