@@ -28,33 +28,15 @@
 
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
-  - [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+  - [Exploring Further](#exploring-further)
 
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`docs-template`
-
-
-### Built With
-
-* []()
-* []()
-* []()
-
+This repository can be used as a template for React projects using the dyte-plugin-sdk.
 
 
 <!-- GETTING STARTED -->
@@ -62,63 +44,22 @@ Here's a blank template to get started:
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
 ### Installation
  
 1. Clone the repo
 ```sh
-git clone https://github.com/dyte-in/docs-template.git
+git clone https://github.com/dyte-in/dyte-plugin-react-template.git
 ```
-2. Install NPM packages
+2. Serve the project locally on port 6969
 ```sh
-npm install
+cd dyte-plugin-react-template
+python3 -m http.server 6969
 ```
+3. Now, open https://staging.dyte.in, create a new meeting, and then open the "Plugins" Sidebar from the bottom right, and then Enable the "LocalhostDev" plugin. If all is fine, you should see a chat message on the sidebar sent from the plugin. Open the console to see logging from other events in the example script (in the index.html file).
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+### Exploring Further
+You can refer to the react template for a complete list of the methods available in the plugin https://github.com/dyte-in/dyte-plugin-react-template#dyte-plugin-sdk.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)._
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/dyte-in/docs-template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`)
-4. Push to the Branch (`git push -u origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-You are requested to follow the contribution guidelines specified in [CONTRIBUTING.md](./CONTRIBUTING.md) while contributing to the project :smile:.
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+For the official API reference, refer to https://sdk.dyte.in/
