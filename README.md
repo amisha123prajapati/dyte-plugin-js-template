@@ -60,6 +60,6 @@ python3 -m http.server 6969
 
 
 ### Exploring Further
-You can refer to the react template for a complete list of the methods available in the plugin https://github.com/dyte-in/dyte-plugin-react-template#dyte-plugin-sdk.
+You can refer to the react template for a complete list of the methods available in the plugin sdk https://github.com/dyte-in/dyte-plugin-react-template#dyte-plugin-sdk.
 
 For the official API reference, refer to https://sdk.dyte.in/
